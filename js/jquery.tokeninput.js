@@ -658,7 +658,7 @@
     }
 
     function find_value_and_highlight_term(template, value, term) {
-      return template.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + value + ")(?![^<>]*>)(?![^&;]+;)", "g"), highlight_term(value, term));
+      return "<li>" + highlight_term(value, term) + "</li>";
     }
 
     // Populate the results dropdown with some results
