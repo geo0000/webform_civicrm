@@ -95,7 +95,7 @@ class ContactComponent implements ContactComponentInterface {
   //  if (empty($node->webform_civicrm)) {
   //    return array();
   //  }
-    $limit = $str ? 12 : 500;
+    $limit = $str ? 20 : 500;
     $ret = [];
     $display_fields = array_values($element['#results_display']);
     $fieldMappings = [
